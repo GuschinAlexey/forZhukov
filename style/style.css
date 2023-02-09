@@ -1,6 +1,55 @@
-body{
-    background-color: #f1f1f1;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
     color: #0f141e;
     font-weight: normal;
-    background: url(./foto/bg.jpg);
-}   
+    background: url(/foto/bg.png);
+} 
+
+ header {
+    height: 70px;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    background-color:#f1f1f1;
+ }
+
+ .left_hederD {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .icomD {
+    width: 60px;
+    height: 58px;
+    border: none;
+    margin-left: 350px;
+ }
+
+ .reg {
+    padding-right: 20px;
+    margin-left: 40px;
+    font-size: 24px;
+    font-family: "League_Gothic";
+    src: url(/style/wifr/LeagueGothic.ttf);
+    font-weight: 1000;
+    font-style: oblique
+ }
+
+ .reg:hover {
+    color: rgb(27, 136, 136);
+ }
+ 
+ .poisk {
+margin-left: 600px;
+ }
+
+ .poisc {
+    width: 30px;
+ }
+
