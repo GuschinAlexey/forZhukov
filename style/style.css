@@ -170,12 +170,47 @@ body {
 
 .foot {
    margin-top: 100px;
-   background-color: black;
+   width: 100%;
+   background-color: #282828;
    color: #fff;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   display: flex;
+   justify-content: center;
+   gap: 30%;
+   padding-bottom: 20px;
 }
 
 .foot_left {
    font-size: 18px;
    font-weight: 800;
+   
+}
+
+.saut_foot {
+   font-size: 20px;
+   font-weight: 1000;
+}
+
+.main_foot {
+  font-weight: 600; 
+}
+
+.contact_foot {
+   font-size: 19px;
+   font-weight: 500;
+   align-items: center;
+}
+
+.pota {
+   color: rgb(32, 114, 221);
+}
+
+.pota_img {
+   width: 25px;
+   height: 25px;
+}
+
+.truba {
+   width: 25px;
+   height: 25px;
 }
