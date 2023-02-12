@@ -215,3 +215,58 @@ body {
    width: 25px;
    height: 25px;
 }
+
+
+.jur {
+   width: 450px;
+   height: 600px;
+}
+
+.Imain_jur {
+   padding-top: 50px;
+   padding-left: 30px;
+   display: flex;
+   gap: 5%;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.zag {
+   font-size: 40px;
+   font-weight: 700;
+}
+
+.zag_I {
+   align-items: center;
+   padding-left: 17px;
+}
+
+.popa_bol {
+   display: flex;
+   padding-left: 80px;
+   color: rgb(96, 106, 121);
+}
+
+.Ilaik {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.left_I {
+   padding-left: 15px;
+   border-left: 2px solid rgb(96, 106, 121);
+}
+
+.raid_I {
+   padding-right: 15px;
+   border-right;: 2px solid rgb(96, 106, 121)
+}
+
+.text_css {
+   color: rgb(44, 46, 49);
+   font-size: 23px;
+   font-weight: 700;
+}
+
+.Iopisal2 {
+   margin-top: 30px;
+}
