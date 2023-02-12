@@ -81,7 +81,70 @@ document.addEventListener("DOMContentLoaded", () => {
             "izd": "Народный доктор",
             "iframe" : "https://online.anyflip.com/xopa/fuow/",
             "str" : "116"
-        }
+        },
+        {
+            "cat" : "ТАЙНЫ-ЗАГАДКИ",
+            "watch": 641,
+            "name" : "Все загадки мира №3 / 2021",
+            "src" : "../foto/cart/10.jpg",
+            "izd": "Эксперт",
+            "iframe" :"https://online.anyflip.com/nomom/mzbg/index.html",
+            "str" : "36"
+        },
+        {
+            "cat" : "БИЗНЕС",
+            "watch": 317,
+            "name" : "Эксперт №30-33 (июль-август/2022)",
+            "src" : "../foto/cart/11.jpg",
+            "izd": "Эксперт",
+            "iframe" :"https://online.anyflip.com/xopa/mzbj/",
+            "str" : "124"
+        },
+        {
+            "cat" : "ЖЕНСКИЕ ЖУРНАЛЫ",
+            "watch": 29426,
+            "name" : "Оракул №11 (ноябрь/2022)",
+            "src" : "../foto/cart/12.jpg",
+            "izd": "Оракул",
+            "iframe" :"https://online.anyflip.com/xopa/bung/",
+            "str" : "44"
+        },
+        {
+            "cat" : "АВТОМОБИЛИ",
+            "watch": 511,
+            "name" : "Авторевю №15 (август/2022)",
+            "src" : "../foto/cart/13.jpg",
+            "izd": "Авторевю",
+            "iframe" :"https://online.anyflip.com/xopa/ghjq/",
+            "str" : "40"
+        },
+        {
+            "cat" : "БИЗНЕС",
+            "watch": 333,
+            "name" : "Эксперт №26 (июнь-июль/2022)",
+            "src" : "../foto/cart/14.jpg",
+            "izd": "Эксперт",
+            "iframe" :"https://online.anyflip.com/xopa/tmeb/",
+            "str" : "92"
+        },
+        {
+            "cat" : "ЖЕНСКИЕ ЖУРНАЛЫ",
+            "watch": 351,
+            "name" : "Таинственные истории №20 (сентябрь/2022)",
+            "src" : "../foto/cart/15.jpg",
+            "izd": "Таинственные истории",
+            "iframe" :"https://online.anyflip.com/xopa/kqle/",
+            "str" : "36"
+        },
+        {
+            "cat" : "АВТОМОБИЛИ",
+            "watch": 615,
+            "name" : "5 колесо №5-6 (май- июнь/2022) Россия",
+            "src" : "../foto/cart/16.jpg",
+            "izd": "5 колесо",
+            "iframe" :"https://online.anyflip.com/xopa/eats/",
+            "str" : "100"
+        },
     ];
 
 
@@ -117,26 +180,26 @@ document.addEventListener("DOMContentLoaded", () => {
             "foto_one": "../foto/cart/9.jpg",
             "foto_one_opis": "Народный доктор №15",
             "foto_one_id": 8,
-            "foto_two": "../foto/cart/2.jpg",
-            "foto_two_opis": "Садовод и огородник №18",
+            "foto_two": "../foto/cart/10.jpg",
+            "foto_two_opis": "Все загадки мира №3",
             "foto_two_id": 9,
-            "foto_three": "../foto/cart/3.jpg",
-            "foto_three_opis": "Авторевю №18",
+            "foto_three": "../foto/cart/11.jpg",
+            "foto_three_opis": "Эксперт №30-33",
             "foto_three_id": 10,
-            "foto_four": "../foto/cart/4.jpg",
-            "foto_four_opis": "Эксперт №34",
+            "foto_four": "../foto/cart/12.jpg",
+            "foto_four_opis": "Оракул №11",
             "foto_four_id": 11,
-            "foto_five": "../foto/cart/5.jpg",
-            "foto_five_opis": "На нашей кухне №5",
+            "foto_five": "../foto/cart/13.jpg",
+            "foto_five_opis": "Авторевю №15",
             "foto_five_id": 12,
-            "foto_six": "../foto/cart/6.jpg",
-            "foto_six_opis": "Цветок №18",
+            "foto_six": "../foto/cart/14.jpg",
+            "foto_six_opis": "Эксперт №26",
             "foto_six_id": 13,
-            "foto_seven": "../foto/cart/7.jpg",
-            "foto_seven_opis": "Вокруг света №6",
+            "foto_seven": "../foto/cart/15.jpg",
+            "foto_seven_opis": "Таинственные истории",
             "foto_seven_id": 14,
-            "foto_eight": "../foto/cart/8.jpg",
-            "foto_eight_opis": "За рулём №9",
+            "foto_eight": "../foto/cart/16.jpg",
+            "foto_eight_opis": "5 колесо №5-6",
             "foto_eight_id": 15
         },
         {
@@ -242,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class="Iopisal2">
                         <span class="text_css">
-                            <hr>Категория: ${iframe[id].cat} <br>Издание: ${iframe[id].izd} <br> Страниц: ${iframe[id].str} <br>Просмотров: ${iframe[id].str}
+                            <hr>Категория: ${iframe[id].cat} <br>Издание: ${iframe[id].izd} <br> Страниц: ${iframe[id].str} <br>Просмотров: ${iframe[id].watch}
                         </span>
                     </div><hr>
                     </div>
