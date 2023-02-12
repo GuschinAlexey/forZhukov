@@ -65,14 +65,23 @@ document.addEventListener("DOMContentLoaded", () => {
             "str" : "130"
         },
         {
-            "cat" : "Путешествия и страны",
-            "watch": 2514,
+            "cat" : "АВТОМОБИЛИ",
+            "watch": 351,
             "name" : "За рулём №9 (сентябрь/2022) Россия",
-            "src" : "../foto/cart/7.jpg",
+            "src" : "../foto/cart/8.jpg",
             "izd": "За рулём",
             "iframe" : "https://online.anyflip.com/xopa/mjcy/",
-            "str" : "100"
+            "str" : "36"
         },
+        {
+            "cat" : "Здоровье",
+            "watch": 251,
+            "name" : "За рулём №9 (сентябрь/2022) Россия",
+            "src" : "../foto/cart/9.jpg",
+            "izd": "Народный доктор",
+            "iframe" : "https://online.anyflip.com/xopa/fuow/",
+            "str" : "116"
+        }
     ];
 
 
@@ -103,20 +112,93 @@ document.addEventListener("DOMContentLoaded", () => {
             "foto_eight": "../foto/cart/8.jpg",
             "foto_eight_opis": "За рулём №9",
             "foto_eight_id": 7
+        },
+        {
+            "foto_one": "../foto/cart/9.jpg",
+            "foto_one_opis": "Народный доктор №15",
+            "foto_one_id": 8,
+            "foto_two": "../foto/cart/2.jpg",
+            "foto_two_opis": "Садовод и огородник №18",
+            "foto_two_id": 9,
+            "foto_three": "../foto/cart/3.jpg",
+            "foto_three_opis": "Авторевю №18",
+            "foto_three_id": 10,
+            "foto_four": "../foto/cart/4.jpg",
+            "foto_four_opis": "Эксперт №34",
+            "foto_four_id": 11,
+            "foto_five": "../foto/cart/5.jpg",
+            "foto_five_opis": "На нашей кухне №5",
+            "foto_five_id": 12,
+            "foto_six": "../foto/cart/6.jpg",
+            "foto_six_opis": "Цветок №18",
+            "foto_six_id": 13,
+            "foto_seven": "../foto/cart/7.jpg",
+            "foto_seven_opis": "Вокруг света №6",
+            "foto_seven_id": 14,
+            "foto_eight": "../foto/cart/8.jpg",
+            "foto_eight_opis": "За рулём №9",
+            "foto_eight_id": 15
+        },
+        {
+            "foto_one": "../foto/cart/1.jpg",
+            "foto_one_opis": "Оракул №8 (август/2022)",
+            "foto_one_id": 16,
+            "foto_two": "../foto/cart/2.jpg",
+            "foto_two_opis": "Садовод и огородник №18",
+            "foto_two_id": 17,
+            "foto_three": "../foto/cart/3.jpg",
+            "foto_three_opis": "Авторевю №18",
+            "foto_three_id": 18,
+            "foto_four": "../foto/cart/4.jpg",
+            "foto_four_opis": "Эксперт №34",
+            "foto_four_id": 19,
+            "foto_five": "../foto/cart/5.jpg",
+            "foto_five_opis": "На нашей кухне №5",
+            "foto_five_id": 20,
+            "foto_six": "../foto/cart/6.jpg",
+            "foto_six_opis": "Цветок №18",
+            "foto_six_id": 21,
+            "foto_seven": "../foto/cart/7.jpg",
+            "foto_seven_opis": "Вокруг света №6",
+            "foto_seven_id": 22,
+            "foto_eight": "../foto/cart/8.jpg",
+            "foto_eight_opis": "За рулём №9",
+            "foto_eight_id": 23
         }
     ];
     
     let journals = '';
     const scripts = document.querySelector(".script");
 
-    document.querySelector(".main_header_2").addEventListener("click", () => {
+    document.querySelector(".script_one_triger").addEventListener("click", () => {
         renderJournals(Journalses[0]);
-        journals = document.querySelectorAll('.cart_1');
-        console.log(journals);
+        
+    });
+
+    document.querySelector(".script_one_triger_one").addEventListener("click", () => {
+        renderJournals(Journalses[0]);
+    });
+
+    document.querySelector(".script_two_triger_two").addEventListener("click", () => {
+        renderJournals(Journalses[1]);
+    });
+
+    document.querySelector(".script_two_triger").addEventListener("click", () => {
+        renderJournals(Journalses[1]);
+    });
+
+    document.querySelector(".script_three_triger").addEventListener("click", () => {
+        renderJournals(Journalses[2]);
+    });
+
+    document.querySelector(".script_three_triger_three").addEventListener("click", () => {
+        renderJournals(Journalses[2]);
     });
 
 
-    function renderJournals(massiv) {
+
+
+    async function renderJournals(massiv) {
         scripts.innerHTML = "";
         scripts.innerHTML += `
         <div class="cart_01">
@@ -131,5 +213,44 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="cart_1" data-id="${massiv.foto_seven_id}"><img class="carD_1" src="${massiv.foto_seven}"><br><span class="carP_1">${massiv.foto_seven_opis}...</span></div>
         <div class="cart_1" data-id="${massiv.foto_eight_id}"><img class="carD_1" src="${massiv.foto_eight}"><br><span class="carP_1">${massiv.foto_eight_opis}...</span></div>
     </div>`;
+    
+    journals = document.querySelectorAll('.cart_1');
+    console.log(journals);
+    journals.forEach(e => {
+         e.addEventListener('click', event => {
+            renderJournals(e.dataset.id);
+        });
+    });
+
+    
+    function renderJournals(id) {
+        scripts.innerHTML = "";
+        scripts.innerHTML += `
+        <div class="Imain_jur">
+                <img class="jur" src="${iframe[id].src}">
+                <div class="Imain"><br><br><br>
+                    <div class="zag_I">
+                        <span class="zag">${iframe[id].name} (август/2022)</span>
+                    </div>
+                    <div class="popa_bol">
+                        <div class="raid_I"><span class="Ilaik">
+                            Просмотров: ${iframe[id].watch} </span>
+                        </div>
+                        <div class="left_I">
+                            <span class="Ilaik">${iframe[id].izd}</span>
+                        </div>
+                    </div>
+                    <div class="Iopisal2">
+                        <span class="text_css">
+                            <hr>Категория: ${iframe[id].cat} <br>Издание: ${iframe[id].izd} <br> Страниц: ${iframe[id].str} <br>Просмотров: ${iframe[id].str}
+                        </span>
+                    </div><hr>
+                    </div>
+                </div>
+            </div>`;
+        scripts.innerHTML += `<iframe src="${iframe[id].iframe}" style="width: 100%; height: 700px" allowfullscreen=""></iframe>`
+        document.querySelector('.main_1').style.height = 1500 + "px";
+        document.querySelector('.main_1').style.marginTop = 50 + "px";
     }
+}; 
 });

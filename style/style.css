@@ -258,7 +258,7 @@ body {
 
 .raid_I {
    padding-right: 15px;
-   border-right;: 2px solid rgb(96, 106, 121)
+   border-right: 2px solid rgb(96, 106, 121)
 }
 
 .text_css {
@@ -270,3 +270,8 @@ body {
 .Iopisal2 {
    margin-top: 30px;
 }
+
+.reg {
+   cursor: pointer;
+}
+
