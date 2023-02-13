@@ -145,6 +145,78 @@ document.addEventListener("DOMContentLoaded", () => {
             "iframe" :"https://online.anyflip.com/xopa/eats/",
             "str" : "100"
         },
+        {
+            "cat" : "БИЗНЕС",
+            "watch": 582,
+            "name" : "Мир новостей №14 (март/2022)",
+            "src" : "../foto/cart/17.jpg",
+            "izd": "Мир новостей",
+            "iframe" :"https://online.anyflip.com/xopa/ygui/",
+            "str" : "24"
+        },
+        {
+            "cat" : "ЖЕНСКИЕ ЖУРНАЛЫ",
+            "watch": 1449,
+            "name" : "Моя Семья №15 (апрель/2022)",
+            "src" : "../foto/cart/18.jpg",
+            "izd": "Моя семья",
+            "iframe" :"https://online.anyflip.com/xopa/ssaj/",
+            "str" : "32"
+        },
+        {
+            "cat" : "Бизнес",
+            "watch": 380,
+            "name" : "Аргументы и факты №28 (июль/2022)",
+            "src" : "../foto/cart/19.jpg",
+            "izd": "Моя семья",
+            "iframe" :"https://online.anyflip.com/xopa/ssaj/",
+            "str" : "56"
+        },
+        {
+            "cat" : "БИЗНЕС",
+            "watch": 455,
+            "name" : "Аргументы и факты №31 (август/2022)",
+            "src" : "../foto/cart/20.jpg",
+            "izd": "Аргументы и факты",
+            "iframe" :"https://online.anyflip.com/xopa/rgzn/",
+            "str" : "48"
+        },
+        {
+            "cat" : "ЖУРНАЛЫ ПРО ЗДОРОВЬЕ",
+            "watch": 2323,
+            "name" : "Вестник ЗОЖ №17 Сентябрь 2021 - (Журнал)",
+            "src" : "../foto/cart/21.jpg",
+            "izd": "Вестник ЗОЖ",
+            "iframe" :"https://online.pubhtml5.com/eezj/hxgt/",
+            "str" : "40"
+        },
+        {
+            "cat" : "ЗДОРОВЬЕ",
+            "watch": 326,
+            "name" : "Секреты здоровья №19 (октябрь/2022)",
+            "src" : "../foto/cart/22.jpg",
+            "izd": "Секреты здоровья",
+            "iframe" :"https://online.anyflip.com/xopa/rhvb/",
+            "str" : "32"
+        },
+        {
+            "cat" : "ЖЕНСКИЕ ЖУРНАЛЫ",
+            "watch": 18782,
+            "name" : "Оракул №9 (сентябрь/2022)",
+            "src" : "../foto/cart/23.jpg",
+            "izd": "Оракул",
+            "iframe" :"https://online.anyflip.com/xopa/ghtp/",
+            "str" : "44"
+        },
+        {
+            "cat" : "ЖЕНСКИЕ ЖУРНАЛЫ",
+            "watch": 1077,
+            "name" : "Моя Семья №12 (март/2022)",
+            "src" : "../foto/cart/24.jpg",
+            "izd": "Моя семья",
+            "iframe" :"https://online.anyflip.com/xopa/cywl/",
+            "str" : "32"
+        }
     ];
 
 
@@ -203,29 +275,29 @@ document.addEventListener("DOMContentLoaded", () => {
             "foto_eight_id": 15
         },
         {
-            "foto_one": "../foto/cart/1.jpg",
-            "foto_one_opis": "Оракул №8 (август/2022)",
+            "foto_one": "../foto/cart/17.jpg",
+            "foto_one_opis": "Мир новостей №14",
             "foto_one_id": 16,
-            "foto_two": "../foto/cart/2.jpg",
-            "foto_two_opis": "Садовод и огородник №18",
+            "foto_two": "../foto/cart/18.jpg",
+            "foto_two_opis": "Моя Семья №15",
             "foto_two_id": 17,
-            "foto_three": "../foto/cart/3.jpg",
-            "foto_three_opis": "Авторевю №18",
+            "foto_three": "../foto/cart/19.jpg",
+            "foto_three_opis": "Аргументы и факты №28",
             "foto_three_id": 18,
-            "foto_four": "../foto/cart/4.jpg",
-            "foto_four_opis": "Эксперт №34",
+            "foto_four": "../foto/cart/20.jpg",
+            "foto_four_opis": "Аргументы и факты №31",
             "foto_four_id": 19,
-            "foto_five": "../foto/cart/5.jpg",
-            "foto_five_opis": "На нашей кухне №5",
+            "foto_five": "../foto/cart/21.jpg",
+            "foto_five_opis": "Вестник ЗОЖ №17",
             "foto_five_id": 20,
-            "foto_six": "../foto/cart/6.jpg",
-            "foto_six_opis": "Цветок №18",
+            "foto_six": "../foto/cart/22.jpg",
+            "foto_six_opis": "Секреты здоровья №19",
             "foto_six_id": 21,
-            "foto_seven": "../foto/cart/7.jpg",
-            "foto_seven_opis": "Вокруг света №6",
+            "foto_seven": "../foto/cart/23.jpg",
+            "foto_seven_opis": "Оракул №9",
             "foto_seven_id": 22,
-            "foto_eight": "../foto/cart/8.jpg",
-            "foto_eight_opis": "За рулём №9",
+            "foto_eight": "../foto/cart/24.jpg",
+            "foto_eight_opis": "Моя Семья №12",
             "foto_eight_id": 23
         }
     ];
@@ -258,7 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
         renderJournals(Journalses[2]);
     });
 
-
+    renderJournals(Journalses[1]);
 
 
     async function renderJournals(massiv) {
@@ -276,7 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="cart_1" data-id="${massiv.foto_seven_id}"><img class="carD_1" src="${massiv.foto_seven}"><br><span class="carP_1">${massiv.foto_seven_opis}...</span></div>
         <div class="cart_1" data-id="${massiv.foto_eight_id}"><img class="carD_1" src="${massiv.foto_eight}"><br><span class="carP_1">${massiv.foto_eight_opis}...</span></div>
     </div>`;
-    
+    document.querySelector('.main_1').style.height = 1100 + "px";
     journals = document.querySelectorAll('.cart_1');
     console.log(journals);
     journals.forEach(e => {
